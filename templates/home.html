@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ML API</title>
+</head>
+
+<body>
+    <div class="login">
+        <h1>Boston House Price Prediction</h1>
+        <!-- Main Input For Receiving Query to our ML -->
+        <table>
+        <form action="{{ url_for('predict')}}" method="post">
+            <tr>
+                <td>
+                    <label for="name"> CRIM</label>
+                </td>
+                <td>
+                    <input type="text" name="CRIM" placeholder="CRIM" required="required" /><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name"> ZN</label>
+                </td>
+                <td>
+                    <input type="text" name="ZN" placeholder="ZN" required="required" /><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name"> INDUS</label>
+                </td>
+                <td>
+                    <input type="text" name="INDUS" placeholder="INDUS" required="required" /><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name"> CHAS</label>
+                </td>
+                <td>
+                    <input type="text" name="CHAS" placeholder="CHAS" required="required" /><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name"> NOX</label>
+                </td>
+                <td>
+                    <input type="text" name="NOX" placeholder="NOX" required="required" /><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name"> RM</label>
+                </td>
+                <td>
+                    <input type="text" name="RM" placeholder="RM" required="required" /><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name"> Age</label>
+                </td>
+                <td>
+                    <input type="text" name="Age" placeholder="Age" required="required" /><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name"> DIS</label>
+                </td>
+                <td>
+                    <input type="text" name="DIS" placeholder="DIS" required="required" /><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name"> RAD</label>
+                </td>
+                <td>
+                    <input type="text" name="RAD" placeholder="RAD" required="required" /><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name"> TAX</label>
+                </td>
+                <td>
+                    <input type="text" name="TAX" placeholder="TAX" required="required" /><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name"> PTRATIO</label>
+                </td>
+                <td>
+                    <input type="text" name="PTRATIO" placeholder="PTRATIO" required="required" /> <br>
+                </td>
+            </tr>
+     
+            <tr>
+                <td>
+                    <label for="name"> B</label>
+                </td>
+                <td>
+                    <input type="text" name="B" placeholder="B" required="required" /><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name"> LSTAT</label>
+                </td>
+                <td>
+                    <input type="text" name="LSTAT" placeholder="LSTAT" required="required" /><br>
+                </td>
+            </tr> 
+            <tr>
+                <td>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </td>
+    </tr> 
+        </form>
+    </table>
+        <br>
+        <br>
+    </div>
+    {{prediction_text}}
+</body>
+
+</html>
