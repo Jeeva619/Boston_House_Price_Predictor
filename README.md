@@ -1,6 +1,6 @@
 ### Boston_House_Price_Predictor
 Boston city house price prediction model
-
+This project involves forecasting the sales price of houses based on various parameters. The objective is to predict the SalePrice variable for each Id in the test set.
 ### Software and tools requirement
 1. [GitHub Account](https://github.com/) 
 2. [HerokuAccount](https://www.heroku.com/)
